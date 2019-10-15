@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Product from "./Products/Product";
+import { getProducts } from "./Data/Data";
+import ProductList from "./Products/ProductList";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="appHeader"></header>
+      <main className="mainContent">
+        <Product name="Featured Product" price={1000} quantity={120} img="https://www.decolore.net/wp-content/uploads/2017/04/product-mock-up-set-2.jpg" />
+        <ProductList products={getProducts()} />
+      </main>
+      <footer className="appFooter"></footer>
     </div>
   );
-}
+};
 
 export default App;
