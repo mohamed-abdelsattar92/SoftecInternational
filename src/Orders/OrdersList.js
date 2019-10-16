@@ -50,7 +50,7 @@ class OrdersList extends React.Component {
       <Paper className={classes.paper}>
         {this.props.orders.map(order => {
           return (
-            <React.Fragment>
+            <React.Fragment key={order.OrderId}>
               <ExpansionPanel>
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
                   <div className={classes.orderContainer} key={order.OrderId}>

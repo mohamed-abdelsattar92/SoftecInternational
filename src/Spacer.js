@@ -5,7 +5,7 @@ const styles = theme => ({
   root: {
     padding: 0,
     margin: 0,
-    height: theme.spacing.unit * 2.5
+    height: theme.spacing(2.5)
   }
 });
 

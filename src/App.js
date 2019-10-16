@@ -3,7 +3,6 @@ import React from "react";
 import "./App.css";
 import CustomAppBar from "./CustomAppBar";
 import { getOrders, getProducts } from "./Data/Data";
-import Order from "./Orders/Order";
 import OrdersList from "./Orders/OrdersList";
 import Product from "./Products/Product";
 import ProductList from "./Products/ProductList";
@@ -24,7 +23,7 @@ const App = props => {
       <main className="mainContent">
         <Paper className={classes.paper}>
           <Product name="Featured Product" price={1000} quantity={120} img="https://www.decolore.net/wp-content/uploads/2017/04/product-mock-up-set-2.jpg" />
-          <CustomAppBar title={"Products"} />
+          <CustomAppBar title={"Products"} hint={"(You can click on low quantity items to edit them)"} />
           <ProductList products={getProducts()} />
           <Spacer />
           <CustomAppBar title={"Orders"} orders={true} />

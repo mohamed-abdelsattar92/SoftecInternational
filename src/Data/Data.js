@@ -2218,3 +2218,8 @@ export function getCustomerName(userId) {
   let user = getUserById(userId);
   return user.Name;
 }
+
+export function editProductQuantity(productId, quantity){
+  let product = getProductById(productId);
+  product.AvailablePieces = quantity;
+}

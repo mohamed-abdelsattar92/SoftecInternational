@@ -13,6 +13,9 @@ const styles = theme => ({
       display: "block"
     }
   },
+  hint: {
+    fontSize: ".75em"
+  },
   search: {
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -65,6 +68,9 @@ class CustomAppBar extends React.Component {
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
             {this.props.title}
+          </Typography>
+          <Typography className={classes.hint} variant="subtitle1">
+            {this.props.hint}
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

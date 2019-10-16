@@ -36,9 +36,8 @@ class Order extends React.Component {
       <Paper className={classes.paper}>
         <div className={classes.customerName}>Customer Name: {this.props.customerName}</div>
         {this.props.products.map(product => {
-          debugger;
           return (
-            <div className={classes.productAndQuantityContainer} key={product.ProductId}>
+            <div className={classes.productAndQuantityContainer} key={product.product.ProductId}>
               <div style={{ width: "60%" }}>
                 <Product name={product.product.ProductName} price={product.product.ProductPrice} quantity={product.product.AvailablePieces} img={product.product.ProductImg} />
               </div>

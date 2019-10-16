@@ -1,7 +1,5 @@
-import React from "react";
 import { withStyles } from "@material-ui/core";
-import EditIcon from "@material-ui/icons/Edit";
-import CheckIcon from "@material-ui/icons/Check";
+import React from "react";
 
 const styles = theme => ({
   productContainer: {
@@ -70,29 +68,25 @@ class Product extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.productContainer}>
+      <div className={classes.productContainer} onClick={this.props.onClick}>
         <img className={classes.productImg} src={this.props.img} alt="product" />
         <div className={classes.productInformationContainer}>
           <h3 className={classes.name}>{this.props.name}</h3>
           <span className={classes.price}>${this.props.price}</span>
           {this.props.quantity <= 10 && this.props.quantity !== 0 && (
-            <div class="ribbon">
-              <a href="#">ONLY {this.props.quantity} LEFT IN STOCK</a>
+            <div className="ribbon">
+              <span>ONLY {this.props.quantity} LEFT IN STOCK</span>
             </div>
           )}
           {this.props.quantity === 0 && (
-            <div class="ribbon">
-              <a href="#">CURRENTLY OUT OF STOCK</a>
+            <div className="ribbon">
+              <span>CURRENTLY OUT OF STOCK</span>
             </div>
           )}
         </div>
       </div>
     );
   }
-
-  editQuantity = () => {
-    this.setState({ quantityEditable: !this.state.quantityEditable });
-  };
 }
 
 export default withStyles(styles)(Product);

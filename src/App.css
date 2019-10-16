@@ -11,13 +11,14 @@
   transform: rotate(35deg);
 }
 
-.ribbon a {
+.ribbon span {
   color: #aa0000;
   font: bold 70% "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 10px 50px;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 0 5px #444;
+  cursor: context-menu;
 }
 
 @media(max-width: 1262px) {
