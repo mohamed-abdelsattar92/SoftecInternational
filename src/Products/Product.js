@@ -68,7 +68,7 @@ class Product extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.productContainer} onClick={this.props.onClick}>
+      <div className={classes.productContainer} onClick={this.onClick(this.props.id)}>
         <img className={classes.productImg} src={this.props.img} alt="product" />
         <div className={classes.productInformationContainer}>
           <h3 className={classes.name}>{this.props.name}</h3>
@@ -87,6 +87,12 @@ class Product extends React.Component {
       </div>
     );
   }
+
+  onClick = id => event => {
+    if (this.props.quantity < 10 && this.props.onClick) {
+      this.props.onClick(id);
+    }
+  };
 }
 
 export default withStyles(styles)(Product);
