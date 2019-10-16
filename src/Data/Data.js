@@ -160,7 +160,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1234,
@@ -272,7 +272,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1241,
@@ -357,7 +357,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1246,
@@ -421,7 +421,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1250,
@@ -501,7 +501,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1255,
@@ -565,7 +565,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1259,
@@ -597,7 +597,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1261,
@@ -613,7 +613,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1262,
@@ -629,7 +629,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1263,
@@ -645,7 +645,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1264,
@@ -709,7 +709,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1268,
@@ -805,7 +805,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1274,
@@ -901,7 +901,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1280,
@@ -997,7 +997,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1286,
@@ -1013,7 +1013,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1287,
@@ -1029,7 +1029,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1288,
@@ -1109,7 +1109,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1293,
@@ -1125,7 +1125,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1294,
@@ -1141,7 +1141,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1295,
@@ -1157,7 +1157,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1296,
@@ -1173,7 +1173,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1297,
@@ -1189,7 +1189,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1298,
@@ -1285,7 +1285,7 @@ const orders = [
         Quantity: 10
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1304,
@@ -1301,7 +1301,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1305,
@@ -1317,7 +1317,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1306,
@@ -1333,7 +1333,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1307,
@@ -1349,7 +1349,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1308,
@@ -1365,7 +1365,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1309,
@@ -1381,7 +1381,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1310,
@@ -1397,7 +1397,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1311,
@@ -1509,7 +1509,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1318,
@@ -1573,7 +1573,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1322,
@@ -1653,7 +1653,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1327,
@@ -1733,7 +1733,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1332,
@@ -1749,7 +1749,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1333,
@@ -1765,7 +1765,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1334,
@@ -1781,7 +1781,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1335,
@@ -1797,7 +1797,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1336,
@@ -1941,7 +1941,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1405,
@@ -1957,7 +1957,7 @@ const orders = [
         Quantity: 8
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1406,
@@ -1973,7 +1973,7 @@ const orders = [
         Quantity: 90
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1407,
@@ -1989,7 +1989,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1408,
@@ -2005,7 +2005,7 @@ const orders = [
         Quantity: 6
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1409,
@@ -2021,7 +2021,7 @@ const orders = [
         Quantity: 3
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1410,
@@ -2037,7 +2037,7 @@ const orders = [
         Quantity: 30
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1411,
@@ -2053,7 +2053,7 @@ const orders = [
         Quantity: 1
       }
     ],
-    PaymentType: "online"
+    PaymentType: "Online"
   },
   {
     OrderId: 1412,
@@ -2186,6 +2186,18 @@ export function getProducts() {
 
 export function getOrders() {
   return orders;
+}
+
+export function getProductById(id) {
+  let product = products.filter(product => {
+    return product.ProductId === id;
+  });
+  return product;
+}
+
+export function getProductPrice(productId) {
+  let product = getProductById(productId);
+  return product[0].ProductPrice;
 }
 
 export function getOrder(id) {
