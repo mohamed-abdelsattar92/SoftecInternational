@@ -25,3 +25,9 @@
     width: 50% !important;
   }
 }
+
+@media(max-width: 972px) {
+  .productContainer {
+    width: 100% !important;
+  }
+}

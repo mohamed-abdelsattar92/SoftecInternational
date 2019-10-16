@@ -2115,7 +2115,7 @@ const users = [
     RegisterDate: "Wed Sep 18 2019 12:35:14 GMT+0200 (Eastern European Standard Time)"
   },
   {
-    Id: "8573-2903-2344",
+    Id: "8573-2903-23443",
     Name: "Ahmed Hossam",
     Email: "Ahmed.Hossam@gmail.com",
     Phone: "01025458780",
@@ -2192,17 +2192,29 @@ export function getProductById(id) {
   let product = products.filter(product => {
     return product.ProductId === id;
   });
-  return product;
+  if (product !== []) return product[0];
 }
 
 export function getProductPrice(productId) {
   let product = getProductById(productId);
-  return product[0].ProductPrice;
+  return product.ProductPrice;
 }
 
 export function getOrder(id) {
   let order = orders.filter(order => {
     return order.OrderId === id;
   });
-  return order;
+  if (order !== []) return order[0];
+}
+
+export function getUserById(id) {
+  let user = users.filter(user => {
+    return user.Id === id;
+  });
+  if (user !== []) return user[0];
+}
+
+export function getCustomerName(userId) {
+  let user = getUserById(userId);
+  return user.Name;
 }

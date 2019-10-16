@@ -1,6 +1,7 @@
-import { AppBar, InputBase, Toolbar, Typography, withStyles } from "@material-ui/core";
+import { AppBar, IconButton, InputBase, Toolbar, Typography, withStyles } from "@material-ui/core";
 import { fade } from "@material-ui/core/styles";
 import SearchIcon from "@material-ui/icons/Search";
+import AddIcon from "@material-ui/icons/Add";
 import React from "react";
 import "./App.css";
 
@@ -78,6 +79,11 @@ class CustomAppBar extends React.Component {
               inputProps={{ "aria-label": "search" }}
             />
           </div>
+          {this.props.orders && (
+            <IconButton edge="end" color="inherit" aria-label="open drawer" style={{ border: "1px solid", marginLeft: "1em" }}>
+              <AddIcon />
+            </IconButton>
+          )}
         </Toolbar>
       </AppBar>
     );

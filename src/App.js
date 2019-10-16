@@ -27,8 +27,7 @@ const App = props => {
           <CustomAppBar title={"Products"} />
           <ProductList products={getProducts()} />
           <Spacer />
-          <Order />
-          <CustomAppBar title={"Orders"} />
+          <CustomAppBar title={"Orders"} orders={true} />
           <OrdersList orders={getOrders()} />
         </Paper>
       </main>

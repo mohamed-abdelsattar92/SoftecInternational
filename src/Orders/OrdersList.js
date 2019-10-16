@@ -1,11 +1,11 @@
-import React from "react";
-import { withStyles, Paper } from "@material-ui/core";
-import { getProductPrice } from "../Data/Data";
+import { Paper, withStyles } from "@material-ui/core";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
-import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
-import Typography from "@material-ui/core/Typography";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import React from "react";
+import { getProductById, getProductPrice, getCustomerName } from "../Data/Data";
+import Order from "../Orders/Order";
 
 const styles = theme => ({
   paper: {
@@ -60,7 +60,7 @@ class OrdersList extends React.Component {
                   </div>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                  <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</Typography>
+                  <Order customerName={this.getCustomerName(order)} products={this.getOrderProductsAndQuantities(order)} />
                 </ExpansionPanelDetails>
               </ExpansionPanel>
             </React.Fragment>
@@ -77,6 +77,20 @@ class OrdersList extends React.Component {
       return acc + val;
     });
     return totalOrderPrice.toFixed(2);
+  };
+
+  getOrderProductsAndQuantities = order => {
+    let products = order.Products.map(product => {
+      return {
+        product: getProductById(product.ProductId),
+        quantity: product.Quantity
+      };
+    });
+    return products;
+  };
+
+  getCustomerName = order => {
+    return getCustomerName(order.UserId);
   };
 }
 
