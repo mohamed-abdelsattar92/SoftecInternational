@@ -11,7 +11,8 @@ const styles = theme => ({
     margin: theme.spacing(2),
     padding: theme.spacing(2),
     height: "100%",
-    boxSizing: "border-box"
+    boxSizing: "border-box",
+    position: "relative"
   },
   productImg: {
     width: "40%",
@@ -22,7 +23,7 @@ const styles = theme => ({
   productInformationContainer: {
     display: "flex",
     flexDirection: "column",
-    textAlign: "left",
+    textAlign: "left"
   },
   price: {
     color: "#006fcc",
@@ -75,13 +76,15 @@ class Product extends React.Component {
           <h3 className={classes.name}>{this.props.name}</h3>
           <span className={classes.price}>${this.props.price}</span>
           {this.props.quantity <= 10 && this.props.quantity !== 0 && (
-            <div className={classes.quantity}>
-              {!this.state.quantityEditable && <EditIcon className="icon" onClick={this.editQuantity} />}
-              {this.state.quantityEditable && <CheckIcon className="icon" onClick={this.editQuantity} />} ONLY <span disabled={this.state.quantityEditable}>{this.props.quantity}</span>
-              left in stock
+            <div class="ribbon">
+              <a href="#">ONLY {this.props.quantity} LEFT IN STOCK</a>
             </div>
           )}
-          {this.props.quantity === 0 && <span className={classes.outOfStock}>Currently Out Of Stock</span>}
+          {this.props.quantity === 0 && (
+            <div class="ribbon">
+              <a href="#">CURRENTLY OUT OF STOCK</a>
+            </div>
+          )}
         </div>
       </div>
     );

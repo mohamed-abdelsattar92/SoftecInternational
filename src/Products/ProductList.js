@@ -12,7 +12,7 @@ const styles = theme => ({
 const ProductList = props => {
   const { classes } = props;
   return (
-    <div className={classes.root}>
+    <Paper className={classes.root}>
       {props.products.map(product => {
         return (
           <div className="productContainer" style={{ width: "25%", display: "flex", alignItems: "center", alignSelf: "center" }}>
@@ -20,7 +20,7 @@ const ProductList = props => {
           </div>
         );
       })}
-    </div>
+    </Paper>
   );
 };
 
